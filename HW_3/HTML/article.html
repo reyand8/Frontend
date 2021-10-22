@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a> |
+            <a href="./main.html">Article</a> |
+            <a href="./article.html">New Article</a> |
+            <a href="./registration.html">Registration</a> |
+            <a href="./about.html">About us</a>
+        </nav>
+    </header>
+    <section>
+        <h1 id="create-article">Create Article</h1>
+        <form class="form" action="">
+            <label for="">
+                <input type="text" PLACEHOLDER="Title" required>
+            </label>
+            <textarea name="" id="" cols="90" rows="10" placeholder="Your text" required></textarea>
+            <label for="">
+                <input type="file" name="file">
+            </label>
+            <p><span>Select the topic of your article</span></p>
+            <label for="topic_1">
+                <input id="topic_1" type="radio" name="test-radio" value="1"> History
+            </label>
+            <label for="topic_2">
+                <input id="topic_2" type="radio" name="test-radio" value="2"> Aircraft
+            </label>
+            <label for="topic_3">
+                <input id="topic_3" type="radio" name="test-radio" value="3"> Commanders
+            </label>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>Copyright<a href="https://www.facebook.com/profile.php?id=100001975186361">Andrey</a></p>
+    </footer>
+</body>
+</html>

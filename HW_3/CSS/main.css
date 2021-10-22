@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    font-family: Quicksand, sans-serif;
+    background-color: #d0e3f1;
+}
+
+nav {
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.index {
+    font-size: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    padding: 25px;
+}
+
+#second_title {
+    text-align: center;
+    font-size: 35px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+.information {
+    padding: 20px 40px;
+    background: #eaf0f6;
+    border: 2px dashed blue;
+    border-radius: 10px;
+}
+
+.caption {
+    font-style: italic;
+}
+
+table, tr, td {
+    padding: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: auto;
+}
+
+.form {
+  white-space: pre-line;
+  padding-left: 40px;
+}
+
+.registration{
+  white-space: pre-line;
+  padding-left: 40px;
+}
+
+button {
+    font-size: 15px;
+    width: 100px;
+}
+
+.block_title, .block_aircraft {
+    padding-left: 30px;;
+}
+
