@@ -1,0 +1,38 @@
+.main_box {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 1624px;
+    height: 1025px;
+    background-color: #EFE6BD;
+    border: 0.5px solid black;
+}
+
+.box {
+    position: absolute;
+}
+
+.yellow {
+    background-color: #DBFE16;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+}
+
+.red {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    right: 0;
+}
+
+.blue {
+    background-color: #78DBE2;
+    height: 400px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+
