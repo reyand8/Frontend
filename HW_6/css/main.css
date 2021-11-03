@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    font-family: Quicksand, sans-serif;
+}
+
+#body_registration, #body_info, #body_about, #body_main, #body_index {
+    background-color: #d0e3f1;
+}
+
+#body_article {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top:25px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#149fdb;
+    height: 50px;
+    width: 370px;
+    text-align: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    background:#149fdb;
+    color:#fff;
+    padding:0px 15px;
+    line-height:50px;
+    display: block;
+    border-right: 1px solid #677B27;
+}
+
+.menu a:hover {
+    background:#56b3db;
+}
+
+.menu a:active {
+    color: #0c0e0f;
+}
+
+.menu li {
+    float:left;
+    position:relative;
+}
+
+.menu li > ul {
+    position:absolute;
+    top:25px;
+    display:none;
+}
+
+.menu li:hover > ul {
+    display:block;
+    width:250px;
+}
+
+.menu li:hover > ul > li {
+    float:none;
+}
+
+.index {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main {
+    margin-bottom: 55px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    padding: 25px;
+}
+
+#second_title {
+    text-align: center;
+    font-size: 35px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+.information {
+    padding: 20px 40px;
+    background: #eaf0f6;
+    border: 2px dashed blue;
+    border-radius: 10px;
+}
+
+.caption {
+    font-style: italic;
+}
+
+table, tr, td {
+    padding: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: auto;
+}
+
+h6 {
+    color: white;
+    font-size: 35px;
+    margin: 50px;
+    height: 80px;
+    padding: 15px;
+    display: block;
+    width: 280px;
+}
+
+h6:hover {
+    padding: 20px 20px;
+    background: rgba(208, 227, 241, 0.5);
+    border: 2px;
+    border-radius: 5px;
+
+}
+
+.form {
+  white-space: pre-line;
+  display: inline-table;
+  width: 350px;
+  padding: 15px;
+  margin-left: 60px;
+  background-color: rgba(208, 227, 241, 0.5);
+  border: 2px;
+  border-radius: 10px;
+}
+
+.flight1 {
+    position: absolute;
+    right: 10px;
+    top: 250px;
+    transition-property: right;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.flight1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h6:hover + .flight1 {
+    right: 100%;
+
+}
+
+span.checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+}
+input[type="checkbox"]:checked + span.checkbox:before {
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked + span.checkbox {
+    background-color: #d0e3f1;
+}
+
+span.checkbox:before {
+    content: "";
+    display: block;
+    background-image: url(../img/icon.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+
+.form_info {
+    font-weight: bold;
+}
+
+.registration{
+  white-space: pre-line;
+  padding-left: 40px;
+}
+
+button {
+    font-size: 15px;
+    width: 100px;
+}
+
+.block_title, .block_aircraft {
+    padding-left: 30px;
+
+}
+
+.aircrafts {
+    margin-left: 20px;
+}
+
+.change_letter::first-letter{
+    font-size: 2em;
+    color: #12506b;
+}
+
+.content:nth-of-type(even) {
+    background-color: #eaf0f6;
+}
+
+.info_image_1 {
+    float: left;
+    padding: 4px;
+    margin: 0 10px 5px 0;
+}
+
+.info_image_2 {
+    float: right;
+    padding: 4px;
+    margin: 0 10px 5px 0;
+}
+
+footer {
+    font-size: 15px;
+    text-decoration: underline;
+}
