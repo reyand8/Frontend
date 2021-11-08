@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+
+
+}
+
+body {
+
+}
+
+
+.block_one {
+    background: rgba(40, 72, 84, 1);
+    position: absolute;
+    height: 799px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    background: #60C1BD;
+    width: 1230px;
+    height: 81px;
+    left: 113px;
+    right: 97px;
+    top: 13px;
+    border: 2px solid #60C1BD;
+    border-radius: 100px;
+
+}
+
+.logo {
+    position: relative;
+    height: 33px;
+    left: 32px;
+    bottom: 8px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+
+}
+
+.navigation {
+    position: relative;
+    margin: 24px;
+    margin-left: 300px;
+
+}
+a {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(40, 72, 84, 1);
+    margin-left: 60px;
+}
+
+.login {
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    margin-left: 110px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.title_one {
+    position: relative;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: rgba(139, 196, 65, 1);
+    font-size: 85px;
+    height: 204px;
+    width: 712px;
+    margin: 223px 548px 372px 180px;
+}
+
+.image_one {
+    position: absolute;
+    top: 265px;
+    right: 240px;
+}
+
+.content_one {
+    font-family: Nunito Sans;
+    font-size: 20px;
+    color: #FFFFFF;
+    height: 112px;
+    width: 542px;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 180px;
+}
