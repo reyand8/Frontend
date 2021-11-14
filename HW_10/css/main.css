@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body, input, select{
+	background: url('../img/bg.png') center no-repeat;
+	background-size: cover;
+	color: rgb(51, 51, 51);
+	font-size: 18px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 16px 0 rgb(196, 199, 42);
+	max-width: 480px;
+	overflow: hidden;
+    background:  rgba(208, 227, 241, 0.8);
+	padding: 25px;
+	width: 100%;
+}
+
+.submit{
+	background: rgba(255,255,255,0.35);
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+form button:hover,
+form button:focus{
+	background: #333;
+	color: #fff;
+}
+
+label{
+	border-bottom: 1px solid #333;
+	display: block;
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+
+label.col-one-half{
+	float: left;
+	width: 50%;
+}
+
+label.col-one-half:nth-of-type(even){
+	border-left: 1px solid #333;
+	padding-left: 0.25em;
+}
+
+select, input{
+	background: none;
+	border: none;
+	line-height: 16px;
+	font-weight: 300;
+	padding: 0.125em 0.25em;
+}
+
+select, input:focus{
+	outline: none;
+}
+
+.select_color{
+    width:400px;
+}
+
+
+.select_code{
+    width: 140px;
+}
+
+.phone {
+    font-size: 20px;
+    width: 220px;
+}
+
+.label-text{
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 8px;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+}
+
+h1 img{
+	height: auto;
+	margin: 0 auto;
+	max-width: 240px;
+	width: 100%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+span.checkbox {
+    display: inline-block;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid  black;
+}
+
+input[type="checkbox"]:checked + span.checkbox:before {
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked + span.checkbox {
+    background-color: #d0e3f1;
+}
+
+.checkbox_lbl {
+    border-bottom: none;
+    text-align: center;
+}
+
+.checkbox_text{
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+span.checkbox:before {
+    content: "";
+    display: block;
+    background-image: url(../img/icon.png);
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
