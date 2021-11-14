@@ -1,0 +1,38 @@
+
+div {
+    box-shadow:
+    -15px -15px 2px -5px rgba(123,51,90,.5),
+    -15px 15px 2px -5px rgba(60,74,123,.5),
+    15px -15px 2px -5px rgba(255,0,0,.5),
+    15px 15px 2px -5px rgba(60,123,68,.5);
+    margin: 50px;
+    text-align: center;
+}
+
+
+
+h1{
+    font-size: 130px;
+    padding: 100px;
+    font-family: Arial;
+    color: hsl(330, 100%, 50%);
+    text-shadow:
+        2px 0px hsl(330, 100%, 25%),
+        3px 1px 0px hsla(330, 100%, 15%, 0.5),
+        3px  2px hsl(350, 100%, 50%),
+        5px  2px hsl(350, 100%, 25%),
+        6px 1px 2px hsla(350, 100%, 15%, 0.5),
+        6px  8px hsl(20, 100%, 50%),
+        8px  8px hsl(20, 100%, 25%),
+        9px 1px 8px hsla(20, 100%, 15%, 0.5),
+        9px  16px hsl(50, 100%, 50%),
+        11px  16px hsl(50, 100%, 25%),
+        12px 2px 16px hsla(50, 100%, 15%, 0.5),
+        12px  25px hsl(70, 100%, 50%),
+        14px  25px hsl(70, 100%, 25%),
+        15px 2px 25px hsla(70, 100%, 15%, 0.5),
+        15px  35px hsl(90, 100%, 50%),
+        17px  35px hsl(90, 100%, 25%),
+        17px 2px 45px hsla(90, 100%, 15%, 0.5);
+
+}
