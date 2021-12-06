@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+a {
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 21px;
+}
+body{
+    background: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+}
+header {
+    position: fixed;
+    display: flex;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    max-width: 1230px;
+    width: 100%;
+}
+nav {
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 321px;
+    justify-content: space-between;
+}
+.header__nav__one{
+    margin-right: 120px;
+}
+.header__nav__one a {
+    margin-right: 35px;
+}
+.header__nav__one a:last-child {
+    margin-right: 0;
+}
+.header__nav__two {
+    margin-left: 100px
+}
+.header__nav__two a {
+    margin-right: 35px;
+}
+.header__nav__two a:first-child {
+    margin-left: 0;
+}
+.header_icon {
+   padding-top: 5px;
+}
+.header_icon:last-child{
+    margin-left: 15px;
+}
+.first__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center:
+    text-align: center;
+    align-items: center;
+    max-width: 730px;
+    width: 100%;
+    margin-top: 460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first__button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.first__title {
+    margin-bottom: 40px;
+}
+.btn {
+    border: 1px solid #FFFFFF;
+    padding: 15px 35px 15px 35px;
+    background: rgba(51, 51, 51, 0.87);
+}
+.footer__img{
+    border-top: 1px solid #FFFFFF;
+    margin-top: 55px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer_logo {
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: 1px solid #FFFFFF;
+}
+.footer_logo:last-child {
+    border: none;
+    padding-right: 0;
+}

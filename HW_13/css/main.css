@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Neris Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Neris-Thin.woff) format('woff');
+    }
+
+@font-face {
+    font-family: 'Neris Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Neris-Light.woff) format('woff');
+    }
+
+@font-face {
+    font-family: 'Neris SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Neris-SemiBold.woff) format('woff');
+}
+
+body{
+    background: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1980px;
+    margin-bottom: 100px;
+}
+
+.first {
+    margin-top: 122px;
+    margin-bottom: 109px;
+}
+
+.main_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main{
+    margin-right: 99px;
+}
+
+.one{
+    max-width:145px;
+    width: 100%;
+}
+
+.two{
+    max-width:149px;
+    width: 100%;
+}
+
+.three{
+    max-width:246px;
+    width: 100%;
+}
+
+.four{
+    max-width:274px;
+    width: 100%;
+}
+
+.first-title {
+    font-family: 'Neris SemiBold';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    color: #70BB3B;
+    padding-bottom: 14px;
+}
+
+.first-paragraph {
+    font-family: 'Neris Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #565656;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+}
+
+.second h1 {
+    margin-left: 145px;
+    margin-top: 100px;
+    margin-bottom: 46px;
+    font-size: 50px;
+    font-family: 'Neris SemiBold';
+    font-weight: 600;
+    line-height: 60px;
+    color: #343434;
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.content_one{
+    max-width: 278px;
+    width: 100%;
+    margin-right: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px 0px #C1C1C14D;
+    -webkit-background-clip: border-box;
+}
+
+.content_title{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-family: 'Neris SemiBold';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.content_description{
+    font-family: 'Neris Light';
+    color: #767676;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 247px;
+    width: 100%;
+    margin: 8px 11px 21px 20px;
+}
+
+.line{
+    width: 261px;
+    border: 1px solid #c6c3c3;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.info_box_one{
+    font-family: 'Neris Light';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #767676;
+    margin-left: 20px;
+}
+
+.info_box_two{
+    font-family: 'Neris Light';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    color: #343434;
+    margin-right: 21px;
+}
+
+.button_one{
+    max-width: 240px;
+    width: 100%;
+    border: 2px solid #FF8743;
+    border-radius: 100px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button_one a{
+    font-family: 'Neris Light';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    padding: 6px 53px 12px 53px;
+    color: #FF8743;
+}
+
+.button_one:hover {
+    background: #FF8743;
+}
+.button_one a:hover {
+    color: #FFFFFF;
+}
+
+.button_two {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.button_two a{
+    font-family: 'Neris Light';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #70BB3B;
+}
+
+@media screen and (max-width: 1440px ) {
+    .second h1 {
+        margin-top: 25px;
+        margin-left: 110px;
+    }
+    .first {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px ) {
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .first {
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-bottom: 79px;
+    }
+
+    .main_title {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 270px;
+    }
+    .second h1 {
+        font-size:40px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .main_content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .content_one{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .first {
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-bottom: 79px;
+    }
+
+    .main_title {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 270px;
+    }
+    .second h1 {
+        font-size:40px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .main_content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .content_one{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 425px ) {
+
+    h1 {
+        font-size: 130px;
+        color: brown;
+    }
+}
+@media screen and (max-width: 376px ) {
+
+    .container {
+        max-width: 375px;
+        padding: 0;
+    }
+    .first {
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-bottom: 79px;
+    }
+
+    .main_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 280px;
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .second h1 {
+        font-size:40px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .main_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_one{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 320px ) {
+    .second h1 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
+
