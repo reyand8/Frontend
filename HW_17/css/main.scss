@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Geometria Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../font/Geometria-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Geometria Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../font/Geometria-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Geometria Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../font/Geometria-Medium.woff) format('woff');
+}
+$font-family-light:'Geometria Light';
+$font-family-medium:'Geometria Medium';
+$font-family-bold:'Geometria Bold';
+$default-white-color: #FFFFFF;
+$button-color: #2A94E2;
+
+@mixin bg-style{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin grid-container-one{
+  display: grid;
+  grid-template-columns: minmax(10%, 1fr) minmax(10%, 1fr) minmax(10%, 1fr);
+  grid-template-rows: 300px 300px 300px;
+}
+@mixin grid-container-two{
+  display: grid;
+  grid-template-columns: minmax(20%, 1fr) minmax(20%, 1fr);
+  grid-template-rows: 571px 571px;
+}
+@mixin text-style-container-two{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container_one{
+  margin-bottom: 60px;
+  .container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h1{
+    font-family: $font-family-bold;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+  }
+}
+h4{
+   font-family: $font-family-bold;
+   font-weight: 800;
+   font-size: 22px;
+   line-height: 33px;
+ }
+.main_table{
+  @include grid-container-one;
+  color:$default-white-color;
+  justify-content: center;
+  gap: 10px;
+  .first_content{
+    @include bg-style;
+    background: url("../img/bg1.png");
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .first_content_details{
+    max-width: 333px;
+    width: 100%;
+    margin: 8px auto;
+    padding-bottom: 20px;
+    opacity: 0;
+  }
+  .first_content:hover .first_content_details{
+    opacity: 1;
+  }
+  .first_content h4{
+    display: flex;
+    transform: translate(0px, 172px);
+    margin: 0 0 26px 20px;
+    transition: 1s;
+  }
+  .first_content:hover h4{
+    transform: translate(0px, 32px);
+    margin-left: 20px;
+  }
+  .first_content_text {
+    font-family: $font-family-light;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
+  .first_content_button {
+    font-family: $font-family-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color:$default-white-color;
+    background: $button-color;
+    border: 2px solid $button-color;
+    margin-top: 20px;
+    padding: 19px 100px 16px 100px;
+  }
+  .content_style {
+    display: flex;
+  }
+  .content_style h4{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 26px 20px;
+    max-width: 418px;
+    width: 100%;
+  }
+  .second_content{
+    @include bg-style;
+    background: url("../img/bg2.png");
+    grid-column: 2;
+  }
+  .third_content{
+    @include bg-style;
+    background: url("../img/bg3.png");
+    grid-column: 3;
+  }
+  .fourth_content{
+    @include bg-style;
+    background: url("../img/bg4.png");
+    grid-row: 2;
+    grid-column: 2/4;
+  }
+  .fifth_content{
+    @include bg-style;
+    background: url("../img/bg5.png");
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+  .sixth_content{
+    @include bg-style;
+    background: url("../img/bg6.png");
+    grid-row: 3;
+    grid-column: 3;
+  }
+}
+.container_two{
+  .container_two_title{
+    max-width: 1080px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px auto;
+  }
+  .container_two_title h2{
+    font-family:  $font-family-bold;
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .container_two_title p{
+    font-family: $font-family-medium;
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .choice_button {
+    display: flex;
+    flex-direction: row;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+  }
+  .choice_button a {
+    font-family: $font-family-medium;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .active {
+    background: $button-color;
+    color: $default-white-color;
+    padding: 20px 60px 13px 60px;
+  }
+  .filter{
+    background: $default-white-color;
+    border: 2px solid #F6F6F6;
+    padding: 19px 60px 14px  60px;
+    color: #000000;
+  }
+  .filter:hover {
+    background: #E5E5E5;
+  }
+}
+.apartments_list{
+  @include grid-container-two;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1140px;
+  width: 100%;
+  margin: 30px auto;
+  .apartment{
+    border: 1px solid $default-white-color;
+    max-width: 555px;
+    width: 100%;
+  }
+  .apartment img{
+    max-width: 555px;
+    width: 100%;
+  }
+  .apartment_content{
+    margin: 30px 30px 10px 30px;
+  }
+  .apartment_info{
+    margin-bottom: 20px;
+  }
+  .apartment_info h5 {
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  .apartment_info h5:hover {
+    color: $button-color;
+  }
+  .apartment_info p {
+    @include text-style-container-two;
+    font-family: $font-family-light;
+  }
+  .main_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .apartment_price p:first-child {
+    font-family: $font-family-light;
+    font-size: 33px;
+    line-height: 54px;
+  }
+  .apartment_price p:last-child {
+    @include text-style-container-two;
+    font-family: $font-family-light;
+  }
+  .apartment_other_info{
+    @include text-style-container-two;
+    font-family: $font-family-light;
+    color: #000000;
+  }
+  .apartment_other_info p:first-child  {
+    line-height: 54px;
+  }
+  .apartment a{
+    @include text-style-container-two;
+    background: $default-white-color;
+    font-family: $font-family-medium;
+    border: 2px solid $default-white-color;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    padding: 18px 176px 14px 176px;
+  }
+  .apartment a:hover{
+    background: $button-color;
+    color: $default-white-color;
+  }
+  .apartment:hover{
+    box-shadow: 0 0 18px 0 #E9504F40;
+  }
+}
